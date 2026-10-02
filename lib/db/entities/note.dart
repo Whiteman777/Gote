@@ -10,6 +10,8 @@ class Note {
   final int locationCapturedAt;
   final double latitude, longtitude, accuracy;
 
+  final String locationName;
+
   const Note({
     required this.body,
     required this.name,
@@ -19,5 +21,6 @@ class Note {
     required this.accuracy,
     required this.latitude,
     required this.longtitude,
+    this.locationName = '',
   });
 }

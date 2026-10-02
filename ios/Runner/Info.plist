@@ -49,6 +49,10 @@
 	</dict>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>gote tags your notes with where you wrote them.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>gote tags your notes with where you wrote them.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

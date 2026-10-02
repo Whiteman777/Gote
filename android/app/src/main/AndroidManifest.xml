@@ -1,4 +1,19 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Attaching a location to a note. Coarse is declared alongside fine so
+         the app can still capture an approximate fix if the user grants only
+         approximate location. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- Flutter only injects INTERNET into the debug and profile manifests, so
+         a release build would have no network. Reverse geocoding and opening a
+         map link both need it. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
     <application
         android:label="gote"
         android:name="${applicationName}"
